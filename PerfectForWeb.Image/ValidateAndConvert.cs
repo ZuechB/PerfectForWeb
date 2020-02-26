@@ -36,6 +36,7 @@ namespace PerfectForWeb.Image
                 image.Write(memStream, MagickFormat.Jpg);
             }
 
+            memStream.Seek(0, SeekOrigin.Begin);
             return memStream;
         }
     }
